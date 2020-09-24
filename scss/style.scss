@@ -1,0 +1,62 @@
+
+// ==============================
+// 変数
+// ==============================
+$font-color_default: #777;
+$font-color_date: #e37b89; // TODO:リファクタ必要
+$color_corp: #e3a8b1;
+$font-color_sub1: #b6a489;
+
+$site-width: 980px;
+
+$font-size_s: 12px;
+$font-size_m: 14px;
+$font-size_default: 16px;
+$font-size_l: 18px;
+$font-size_xl: 24px;
+$font-size_xxl: 30px;
+$font-size_3l: 38px;
+
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+$space_3l: 40px;
+
+$font-family_corp: 'Amatic SC', cursive;
+
+// マップ型変数を使うと便利
+$breakpoints: (
+  'sm': 'screen and (max-width: 414px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (max-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+//==========================
+//import
+//==========================
+@import "../Foundation/base";
+@import "../Foundation/reset";
+
+@import "../Layout/header";
+@import "../Layout/footer";
+
+@import "../Object/component/nav";
+@import "../Object/component/news";
+@import "../Object/component/panel";
+@import "../Object/component/form";
+@import "../Object/component/btn";
+@import "../Object/project/container";
+@import "../Object/project/hero";
+@import "../Object/project/news";
+
+@import "../Object/utility/utility";

@@ -1,0 +1,20 @@
+// ==================================
+// Utility
+// ==================================
+.u-bgColor__lightGray { // TODO:リファクタ必要（色が後から修正が入り、赤色になったら？）
+    background: #f8f7fc;
+    box-shadow: 0px 0px 4px 2px #ddd inset;
+  }
+  
+  .mb-xxl {
+    margin-bottom: $space_xxl;
+  }
+  
+  .ft-corp {
+    font-weight: bold;
+    font-family: $font-family_corp;
+  }
+  
+  .ft-l {
+    font-size: $font-size_xl;
+  }

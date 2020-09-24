@@ -1,0 +1,7 @@
+.p-news,.p-staff { // TODO: リファクタ必要（span以外を使うことも考えてclass名で指定すること）
+    display: inline-block;
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+  }

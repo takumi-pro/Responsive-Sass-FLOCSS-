@@ -1,0 +1,112 @@
+// ==================================
+// panel
+// ==================================
+.c-panel {
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    transition: .5s;
+    &--hover {
+      display: inline-block;
+      transition: .5s;
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        transition: .5s;
+      }
+    }
+    &--border {
+      border-radius: 5px;
+      border: 5px solid #f6f5f4;
+    }
+    &__head, &__foot {
+      padding: $space_m;
+    }
+    &__head {
+      text-align: center;
+      color: $color_corp;
+    }
+    &-active {
+      border: 5px solid $color_corp;
+    }
+    &__badge {
+      background: #e37b89;
+      color: #fff;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      border-radius: 60px;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      line-height: 1.3em;
+      padding: 15px 0;
+      box-sizing: border-box;
+      font-size: $font-size_s;
+      transform: rotate(15deg);
+      @include mq() {
+        top: -20px;
+        right: -13px;
+      }
+    }
+    &__group {
+      margin-right: 0;
+      padding: 0 10px;
+      @include mq($breakpoint: md){
+        margin-right: 0;
+      }
+      &--float {
+        overflow: hidden;
+      }
+      &-flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .c-panel {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: $space_l;
+        box-sizing: border-box;
+        &.panel__cource{
+          @include mq($breakpoint: md){
+            margin-right: 0px;
+          }
+        }
+        &.panel__staff{
+          margin-right: 15px;
+          @include mq($breakpoint: md){
+            margin-right: 15px;
+          }
+          &:nth-of-type(4){
+            margin-right: 0px;
+            @include mq($breakpoint: md){
+              margin-right: 15px;
+            }
+          }
+        }
+        
+        &:last-child{
+          margin-right: 0px;
+        }
+        
+      }
+    }
+    &__staff {
+      width: calc(25% - #{$space_l});
+      @include mq($breakpoint: md){
+        width: calc(50% - #{$space_l});
+      }
+      @include mq() {
+        width: calc(50% - #{$space_l});
+      }
+    }
+    &__cource {
+      width: calc(33.3% - #{$space_l});
+  
+      @include mq($breakpoint: md) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+  

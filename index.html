@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>レスポンシブデザインページ</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  
+  <link type="text/css" rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="l-header js-float-menu">
+  <h1 class="l-header__title">Responsive Design</h1>
+
+  <div class="p-menu__trigger c-menu__trigger js-toggle-sp-menu">
+    <span class="c-menu__trigger--rotate"></span>
+    <span class="c-menu__trigger--rotate"></span>
+    <span class="c-menu__trigger--rotate"></span>
+  </div>
+  <nav class="c-menu js-toggle-sp-menu-target">
+    <ul class="c-nav__menu">
+      <li class="c-menu__item"><a class="c-menu__link" href="">TOP</a></li>
+      <li class="c-menu__item"><a class="c-menu__link" href="#news">NEWS</a></li>
+      <li class="c-menu__item"><a class="c-menu__link" href="#about">ABOUT</a></li>
+      <li class="c-menu__item"><a class="c-menu__link" href="#staff">STAFF</a></li>
+      <li class="c-menu__item"><a class="c-menu__link" href="#cource">COURCE</a></li>
+      <li class="c-menu__item"><a class="c-menu__link" href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="l-main">
+  <section class="p-hero p-container-fluid js-float-menu-target">
+    <h2 class="p-hero__title">Responsive Design<br> is so good.</h2>
+  </section>
+
+  <section class="p-container p-container-ornament" id="news">
+    <h2 class="p-container__title"><span class="p-news">NEWS</span></h2>
+    <div class="p-container__body">
+      <ul class="c-news">
+        <li class="c-news__item">
+          <a class="c-news__link" href="">
+            <span class="c-news__date">2019.12.31</span>
+            <span class="c-news__title">サンプルNEWSタイトルサンプルNEWSタイトル</span>
+          </a>
+        </li>
+        <li class="c-news__item">
+          <a class="c-news__link" href="">
+            <span class="c-news__date">2019.12.31</span>
+            <span class="c-news__title">サンプルNEWSタイトルサンプルNEWSタイトル</span>
+          </a>
+        </li>
+        <li class="c-news__item">
+          <a class="c-news__link" href="">
+            <span class="c-news__date">2019.12.31</span>
+            <span class="c-news__title">サンプルNEWSタイトルサンプルNEWSタイトル</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="u-bgColor__lightGray" id="about">
+    <div class="p-container p-container--lightGray">
+      <h2 class="p-container__title p-container__title--lightGray"><span>ABOUT</span></h2>
+      <div class="p-container__body">
+        <p>レスポンシブWebデザインとは、どんな大きさの画面でも見やすく、使いやすいWebサイトにするために必要なものです。
+          1つのHTML（Webサイトに載せる情報）で配信し、CSS（情報の大きさや位置など表示の指定）はデバイスごとに用意して表示を変えさせます。
+          内容は全て同じですが見せ方が違うということです。HTMLが１つなのでWebサイトに載せる情報を修正や更新する時に作業が1回で済みます。
+          デバイスごとにHTMLがあると修正や更新の作業をHTMLの数だけしなくてはなりません。
+          スマホに対応したWebサイトが検索結果の上位に表示されやすくなる「モバイルフレンドリー」や、スマホ用のページが順位の決め手になる「モバイルファーストインデックス」に対応できます。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-container p-container-ornament" id="staff">
+    <h2 class="p-container__title"><span class="p-staff">STAFF</span></h2>
+    <div class="p-container__body">
+      <div class="c-panel__group c-panel__group--float">
+        <a href="" class="c-panel c-panel--hover c-panel__staff">
+          <div class="panel-body">
+            <img src="./images/staff1.jpg" alt="">
+          </div>
+        </a>
+        <a href="" class="c-panel c-panel--hover c-panel__staff">
+          <div class="panel-body">
+            <img src="./images/staff2.jpg" alt="">
+          </div>
+        </a>
+        <a href="" class="c-panel c-panel--hover c-panel__staff">
+          <div class="panel-body">
+            <img src="./images/staff3.jpg" alt="">
+          </div>
+        </a>
+        <a href="" class="c-panel c-panel--hover c-panel__staff">
+          <div class="panel-body">
+            <img src="./images/staff4.jpg" alt="">
+          </div>
+        </a>
+        <a href="" class="c-panel c-panel--hover c-panel__staff">
+          <div class="panel-body">
+            <img src="./images/staff5.jpg" alt="">
+          </div>
+        </a>
+        <a href="" class="c-panel c-panel--hover c-panel__staff">
+          <div class="panel-body">
+            <img src="./images/staff6.jpg" alt="">
+          </div>
+        </a>
+        <a href="" class="c-panel c-panel--hover c-panel__staff">
+          <div class="panel-body">
+            <img src="./images/staff1.jpg" alt="">
+          </div>
+        </a>
+        <a href="" class="c-panel c-panel--hover c-panel__staff">
+          <div class="panel-body">
+            <img src="./images/staff2.jpg" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="u-bgColor__lightGray" id="cource">
+    <div class="p-container p-container--lightGray">
+      <h2 class="p-container__title"><span>COURCE</span></h2>
+      <div class="p-container__body">
+        <div class="c-panel__group c-panel__group-flex">
+          <div class="c-panel c-panel--border c-panel__cource">
+            <div class="c-panel__head">
+              <span class="ft-corp ft-l">Bussiness</span>コース
+            </div>
+            <div class="c-panel__body">
+              <img src="./images/price1.jpg" alt="">
+            </div>
+            <div class="c-panel__foot">
+              <p>多色使いで髪に立体的な表情が生まれ必要な部分にカラーリングを施すので髪全体の負担が少なくなります。ハイライト、又はローライトなどが含まれます。</p>
+            </div>
+          </div>
+          <div class="c-panel c-panel__border c-panel__cource c-panel-active">
+            <span class="c-panel__badge">
+              オス<br>スメ
+            </span>
+            <div class="c-panel__head">
+              <span class="ft-corp ft-l">Advance</span>コース
+            </div>
+            <div class="c-panel__body">
+              <img src="./images/price2.jpg" alt="">
+            </div>
+            <div class="c-panel__foot">
+              <p>髪に水分をたっぷり保ちながらぷるんとした自然な仕上がりのデジタルパーマです。低温でロットを巻くので髪へのダメージを最小限に抑えられ、まとまりのある髪になります。</p>
+            </div>
+          </div>
+          <div class="c-panel c-panel--border c-panel__cource">
+            <div class="c-panel__head">
+              <span class="ft-corp ft-l">Beginners</span>コース
+            </div>
+            <div class="c-panel__body">
+              <img src="./images/price3.jpg" alt="">
+            </div>
+            <div class="c-panel__foot">
+              <p>綺麗な髪はまず頭皮から。毛穴の詰まりを除去したり、頭皮のトリートメントで健康な髪と頭皮に。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-container p-container-ornament" id="contact">
+    <h2 class="p-container__title"><span>CONTACT</span></h2>
+    <div class="p-container__body">
+      <form action="" class="c-form c-form--m">
+        <input class="c-input c-input--l" type="text" placeholder="お名前">
+        <input class="c-input c-input--l" type="email" placeholder="email">
+        <textarea class="c-input c-input--l c-input__textarea mb-xxl" placeholder="お問い合わせ内容"></textarea>
+        <button class="c-btn c-btn__corp c-btn__l">送信</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="l-footer">
+  <p>Copyright © takumidiary. All Rights Reserved</p>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+// ==================================
+// form
+// ==================================
+.c-form {
+    width: 100%;
+    &--m {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      @include mq() {
+        width: 100%;
+      }
+    }
+  }
+  
+  .c-input {
+    display: block;
+    margin-bottom: $space_m;
+    border: 3px solid #f6f5f4;
+    border-radius: 4px;
+    outline: none;
+    height: 60px;
+    font-size: $font-size_l;
+    color: $font-color_default;
+    box-sizing: border-box;
+    &--l {
+      padding: 5px 10px;
+      width: 100%;
+    }
+    &:focus {
+      border: 3px solid $color_corp;
+    }
+    &__textarea {
+      height: 200px;
+    }
+  }
+  
+  ::placeholder {
+    color: #ccc;
+  }
+  

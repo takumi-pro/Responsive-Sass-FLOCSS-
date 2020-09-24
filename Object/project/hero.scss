@@ -1,0 +1,32 @@
+// ==================================
+// hero
+// ==================================
+.p-hero {
+    background-image: url('../images/hero.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      font-size: 60px;
+      font-family: $font-family_corp;
+      color: #fff;
+      text-shadow: 0 0 20px rgba(227, 123, 137, .4), 0 0 50px rgba(0, 0, 0, .8);
+      @include mq($breakpoint: md){
+        text-align: center;
+      }
+      @include mq() {
+        text-align: center;
+      }
+    }
+    br {
+      display: none;
+      @include mq() {
+        display: block;
+      }
+    }
+  }

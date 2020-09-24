@@ -1,0 +1,62 @@
+// ==================================
+// container
+// ==================================
+.p-container {
+    max-width: $site-width;
+    @include mq($breakpoint: md){
+      max-width: 600px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    @include mq() {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    &-fluid {
+      width: 100%;
+    }
+    &__title {
+      font-family: $font-family_corp;
+      text-align: center;
+      font-size: $font-size_3l;
+      margin-bottom: $space_3l;
+      @include mq() {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &__body {
+      @include mq() {
+        padding-left: $space_l;
+        padding-right: $space_l;
+      }
+    }
+    &-ornament {
+      .p-container__title {
+        &:before, &:after {
+          border-top: 1px solid #2e1f1a;
+          content: "";
+          display: block;
+          position: relative;
+          z-index: 0;
+        }
+        &:before {
+          top: 28px;
+        }
+        &:after {
+          top: -28px;
+        }
+        &--lightGray {
+          span {
+            background: #f8f7fc;
+          }
+        }
+      }
+    }
+  }
